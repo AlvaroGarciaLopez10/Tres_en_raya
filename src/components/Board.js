@@ -4,11 +4,11 @@ export default function Board(props){
 
    return <div> 
         {
-          values.map((rowValues, index)=>{
+          values.map((rowValues, rowIndex)=>{
             let row = rowValues.map((value, columnIndex)=>{
-              return <square key={index + "-" + columnIndex} value={value}/>
+              return <Square rowIndex={rowIndex} columnIndex={columnIndex} boardClick={props.appClick} key={rowIndex + "-" + columnIndex} value={value}/>
             })
-            return <div key={"row" + index}>{row}</div>
+            return <div key={"row" + rowIndex}>{row}</div>
 
           })
         }
