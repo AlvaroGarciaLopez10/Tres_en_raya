@@ -1,8 +1,10 @@
 import './App.css';
+import 'bootstrap/dist/css/bootstrap.min.css';
 import {useState, useEffect} from "react";
 import Header from './Header';
 import Board from './Board';
 import Reset from './Reset';
+
 
 const PLAYERRX = "Player 1 - Xs";
 const PLAYER0 = "Player 2 - 0s";
